@@ -37,10 +37,17 @@
     <link rel="icon" type="image/png" href="images/avatar.png" />
 
     <!-- Analytics -->
+    <script>
+      window.goatcounter = {
+        path: function (p) {
+          return location.host + p;
+        },
+      };
+    </script>
     <script
-      defer
-      data-domain="link.monimiller.com"
-      src="https://plausible.io/js/script.js"
+      data-goatcounter="https://monimiller.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
     ></script>
   </head>
 
@@ -86,7 +93,7 @@
           <!--
 
           ## Breaking down <a> attributes:
-          
+
           1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
           The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
           If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
